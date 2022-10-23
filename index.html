@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dicy</title>
+		<!-- Google fonts link -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lobster+Two:ital,wght@1,700&family=Montserrat:wght@400;500;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap link -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<!-- Font-awesome link -->
+		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css" />
+
+		<!-- Local stylesheet -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- header Section -->
+
+		<header>
+			<h1 class="big-heading">Tap to Roll</h1>
+		</header>
+
+		<!-- Main Section -->
+
+		<main>
+			<div class="row">
+				<div class="dice col-lg-6 col-md-6">
+					<p class="name player1-name">Player 1</p>
+					<img id="die1" src="images/dice6.png" alt="dice6" width="200" onclick="roll1()" />
+				</div>
+
+				<div class="dice col-lg-6 col-md-6">
+					<p class="name player2-name">Player 2</p>
+					<img id="die2" src="images/dice6.png" alt="dice6" width="200" onclick="roll2()" />
+				</div>
+			</div>
+			<button class="btn btn-lg btn-outline-light restart" type="button" onclick="restart()">Restart</button>
+		</main>
+
+		<!-- Footer Section -->
+
+		<footer>
+			<p>
+				<a href="https://github.com/Pritam8968/dice-game">
+					www <img src="images/casino.png" alt="dice-image" width="25px" /> pritam8968
+					<img src="images/casino.png" alt="dice-image" width="25px" /> github
+					<img src="images/casino.png" alt="dice-image" width="25px" />
+					io/dice-game
+				</a>
+			</p>
+			<p>&copy 2022 Pritam Sarkar</p>
+		</footer>
+		<!-- Bootstrap JS link -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+		<!-- Local js -->
+		<script src="index.js"></script>
+	</body>
+</html>

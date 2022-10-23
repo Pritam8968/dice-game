@@ -1,0 +1,63 @@
+:root {
+	--light: #eeeeee;
+	--mint: #4ecca3;
+	--light-blue: #5abbd0;
+}
+
+body {
+	background-color: #393e46;
+	text-align: center;
+}
+/* Heading */
+.big-heading {
+	color: var(--mint);
+	font-family: "Lobster Two", cursive;
+	font-size: 8rem;
+	text-shadow: 5px 4px 4px #232931e6;
+}
+.name {
+	color: var(--light-blue);
+	font-family: "Caveat", cursive;
+	font-size: 2rem;
+}
+/* containers */
+.dice {
+	margin: 30px auto;
+	padding: 20px;
+}
+.dice .name {
+	margin-bottom: 30px;
+}
+main {
+	padding: 2% 15%;
+}
+main::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+/* Footer Section */
+footer {
+	background: #393e46;
+	margin: auto;
+}
+p {
+	color: var(--light);
+	font-family: "Caveat", cursive;
+	font-size: 18px;
+	margin: 10px auto;
+	width: 70%;
+}
+footer a {
+	color: var(--light);
+	display: inline-block;
+	text-decoration: none;
+}
+footer a:hover {
+	color: dodgerblue;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	transform: scale(1.1);
+}
+footer a:hover:active {
+	color: tomato;
+}
